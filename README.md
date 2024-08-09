@@ -30,5 +30,4 @@ This repository showcases a minimal yet functional Flask application, designed f
    This command builds the Docker image and runs the application in a container.
 
 ## 🌐 Accessing the Application
-Once the container is up, visit `http://localhost:5000` to view the Flask app in action.
-
+Once the container is up, you can interact with the Flask application by sending HTTP requests to `http://localhost:5000` using tools like `curl`, Postman, or through your frontend code.
