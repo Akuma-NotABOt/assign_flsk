@@ -1,5 +1,4 @@
 # assign_flsk
-# assign_flsk
 
 ## 🌟 Overview
 This repository showcases a minimal yet functional Flask application, designed for seamless deployment via Docker. It's perfect for developers looking to quickly spin up a web app within a containerized environment, ensuring consistency across different systems.
