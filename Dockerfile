@@ -1,11 +1,15 @@
-FROM python:3.11.8
+FROM python:3.11.7
 
-WORKDIR /app
+WORKDIR /home
 
-COPY . /app
-RUN pip install -r requirements.txt
+COPY . /home
+RUN pip install --no-cache-dir -r requirements.txt
 
-
+# Expose the port that the app runs on
 EXPOSE 5000
 
-CMD ["python", "app.py"]
+# Define environment variable (optional)
+ENV FLASK_APP=app.py
+
+# Run app.py when the container launches
+CMD ["flask", "run", "--host=0.0.0.0"]
